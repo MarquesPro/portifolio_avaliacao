@@ -1,0 +1,210 @@
+/* Aqui estou estilizando meu titulo principal (h1) */
+h1 {
+    font-family: 'Arial', sans-serif; 
+    font-size: 2.5em; /* Tamanho da fonte */
+    color: #ab19cc; /* Cor do texto */
+    text-align: center; /* Alinhamento */
+    margin-top: 20px; /* Margem  */
+}
+
+/* Estilo para o corpo da página */
+body {
+    font-family: 'Arial', sans-serif; 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; /* Inclui o padding e a borda no tamanho total dos elementos */
+    line-height: 1.6; /* Altura da linha */
+    color: #333;
+    background: #f5f5f5; 
+}
+
+/* Estilo para o cabeçalho */
+header {
+    background-color: #000000; 
+    color: #6d20a9; 
+    padding: 2rem 0; /* Espaçamento interno */
+    text-align: center; /* Texto centralizado */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* Estilo para o título dentro do cabeçalho (header h1) */
+header h1 {
+    margin: 0; 
+    font-size: 2.5rem; 
+    font-weight: bold; /* Texto em negrito */
+}
+
+/* Estilo para a lista de navegação (nav ul) */
+nav ul {
+    list-style-type: none; /* Remove marcadores de lista */
+    padding: 0; 
+    margin: 0; 
+    display: flex; /* Exibe os itens em linha */
+    justify-content: center; 
+    gap: 1rem; /* Espaço entre os itens */
+}
+
+/* Estilo para os itens da lista (nav ul li) */
+nav ul li {
+    display: inline; /* Exibe os itens em linha */
+}
+
+/* Estilo para os links dentro da lista de navegação (nav ul li a) */
+nav ul li a {
+    color: #b25cf4; 
+    text-decoration: none; /* Remove sublinhado */
+    font-weight: 500; /* Peso da fonte */
+    transition: color 0.3s; /* Transição suave para a cor */
+}
+
+/* Estilo para o estado hover dos links de navegação */
+nav ul li a:hover {
+    color: #6d20a9; /* Cor do texto quando o mouse está sobre o link */
+}
+
+/* Estilo para o elemento principal (main) */
+main {
+    padding: 2rem; 
+    max-width: 1200px; /* Largura máxima */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    background: #6d20a9; /* Cor de fundo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* Estilo para as seções */
+section {
+    margin-bottom: 2rem; 
+    position: relative; 
+    overflow: hidden; /* Oculta o conteúdo que excede os limites */
+    background: #fff; /* Cor de fundo */
+    padding: 2rem; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* Estilo para os títulos dentro das seções section h2 */
+section h2 {
+    border-bottom: 2px solid #6d20a9; 
+    padding-bottom: 0.5rem; 
+    font-size: 1.75rem; 
+}
+
+/* Pseudo-elemento antes da seção para efeitos visuais */
+section:before {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    z-index: -1; /* Coloca atrás do conteúdo */
+    opacity: 0.1; /* Transparência */
+    transform: scale(1.1); /* Aumenta levemente o tamanho */
+}
+
+/* Estilo para o rodapé footer */
+footer {
+    background-color: #262626; 
+    color: #FFFFFF; /* Cor do texto */
+    text-align: center; 
+    padding: 1rem 0; 
+    position: relative; 
+    bottom: 0; 
+    width: 100%; 
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* Estilos para dispositivos móveis  */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem; /* tamanho da fonte */
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem; /* Reduz o espaço entre os itens */
+    }
+
+    main {
+        padding: 1rem; /* Reduz o espaçamento interno */
+    }
+}
+
+/* Estilo para a seção de contato id contact */
+#contact {
+    margin-bottom: 2rem; /* Espaçamento inferior */
+}
+
+/* Estilo para o título dentro da seção de contato id contact h2 */
+#contact h2 {
+    border-bottom: 2px solid #6d20a9; 
+    padding-bottom: 0.5rem; 
+    font-size: 1.75rem; 
+    margin-bottom: 1rem; 
+}
+
+/* Estilo para a lista dentro da seção de contato id contact ul */
+#contact ul {
+    list-style-type: none; /* Remove marcadores de lista */
+    padding: 0; 
+    margin: 0; 
+}
+
+/* Estilo para os itens da lista dentro da seção de contato id contact ul li */
+#contact ul li {
+    margin-bottom: 0.5rem; /* Espaçamento inferior */
+    font-size: 1rem; 
+}
+
+/* Estilo para os links dentro dos itens da lista de contato */
+#contact ul li a {
+    color: #6d20a9; 
+    text-decoration: none; /* Remove sublinhado */
+    transition: color 0.3s; /* Transição suave para a cor */
+}
+
+/* Estilo para o estado hover dos links da lista de contato */
+#contact ul li a:hover {
+    color: #0b0b7c; /* Cor do texto quando o mouse está sobre o link */
+}
+
+/* Estilo geral para todos os links dentro de itens de lista ul li a */
+ul li a {
+    display: block; /* Exibe como bloco */
+    padding: 10px; 
+    border: 5px solid #a32ec7; /* Borda */
+    border-radius: 10px; /* Cantos arredondados */
+    text-decoration: none; /* Remove sublinhado */
+    margin-bottom: 5px; /* Espaçamento inferior */
+    color: #000; 
+    transition: background-color 0.3s, transform 0.3s; /* Transições suaves para cor e transformação */
+}
+
+/* Estilo para o estado hover dos links */
+ul li a:hover {
+    background-color: #9a62b0; 
+    transform: scale(1.05); /* Aumenta levemente o tamanho */
+}
+
+/* Estilo para animação fade in up */
+.animate__fadeInUp {
+    animation: fadeInUp 1s ease-in-out forwards; /* Animação */
+}
+
+/* Definição da animação fade in up */
+@keyframes fadeInUp {
+    from {
+        opacity: 0; 
+        transform: translateY(20px); /* Começa deslocado para baixo */
+    }
+    to {
+        opacity: 1; 
+        transform: translateY(0); /* Termina na posição original */
+    }
+}
+
+/* Estilo para o container de imagem */
+.image-container {
+    display: inline-block; /* Exibe como bloco em linha */
+    margin-right: 70px; /* Espaçamento à direita */
+}
+
